@@ -1,0 +1,51 @@
+var input = [
+                ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
+                ["0002", "Dika Sembiring", "Medan", "10/10/1992", "Bermain Gitar"],
+                ["0003", "Winona", "Ambon", "25/12/1965", "Memasak"],
+                ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
+            ]
+
+            function dataHandling () {
+  
+  for(var i =0; i < input.length;i++)
+  {
+    
+      var tampung = "";
+    for(var a =0; a < input[i].length;a++)
+    {
+      if(a == 0)
+      {
+        console.log('Nomor ID: ' + input[i][a]);
+      }
+      else if (a == 1)
+      {
+        console.log('Nama Lengkap: ' + input[i][a]);
+      }
+      else if (a == 2)
+      {
+        //console.log('TTL: ' + input[i][a] + ' ' + input[i][a]);
+        tampung = 'TTL: ' + input[i][a] + ' ';
+      }
+      else if (a == 3)
+      {
+        tampung += input[i][a];
+        console.log(tampung);
+      }
+      else if (a == 4)
+      {
+        console.log('Hobi: ' + input[i][a]);
+      }
+      else
+      {
+        console.log('Kolom Ke ' + a + ' : ' + input[i][a]);
+      }
+    }
+    
+    if(i + 1 < input.length)
+    {
+      console.log('--------------------------------');
+    }
+  }
+}
+
+dataHandling();
