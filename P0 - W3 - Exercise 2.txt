@@ -1,0 +1,9 @@
+var input = 'hello world!';
+var counter = input.length - 1 ;
+var output = '';
+
+
+for(counter; counter >= 0; counter--) {
+  output += input[counter];
+}
+console.log(output);
